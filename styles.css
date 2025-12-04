@@ -191,3 +191,33 @@ body {
   vertical-align: middle;
   background-image: url("/assets/github-142-svgrepo-com.svg");
 }
+@media (max-width: 768px) {
+  .columns{
+    flex-direction: column;
+    gap:16px;
+  }
+  .left-column{
+    margin-left:0;
+    flex-basis:auto;
+    width:100%;
+  }
+  .right-column{
+    padding: 16px 8px;
+  }
+    .header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+  }
+
+  .avatar {
+    margin: 0 auto 8px;
+    width: 160px;
+    height: 160px;
+  }
+
+  .header-text {
+    align-items: center;
+  }
+}
