@@ -30,8 +30,9 @@ body {
   background: #b1cff1 ;
   clip-path: polygon(100% 0, 0 100%, 100% 100%);
   opacity: 0.18;
-  z-index: 0;
-}.page::after {
+  pointer-events: none;
+}
+.page::after {
   content: "";
   position: absolute;
   top: -30px;
@@ -41,7 +42,7 @@ body {
   background: #b1cff1 ;
   clip-path: polygon(0 0, 100% 0, 0 100%);
   opacity: 0.18;
-  z-index: 0;
+  pointer-events: none;
 }
 .columns {
   display: flex;
@@ -157,4 +158,36 @@ body {
   border-radius: 8px; 
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.10);
 }
-
+.phone-icon{
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  margin-right: 2px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: middle;
+  background-image: url("/assets/phone-svgrepo-com.svg");
+}
+.mail-icon{
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  margin-right: 2px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: middle;
+  background-image: url("/assets/email-1573-svgrepo-com.svg")
+}
+.github-icon{
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  margin-right: 2px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: middle;
+  background-image: url("/assets/github-142-svgrepo-com.svg");
+}
